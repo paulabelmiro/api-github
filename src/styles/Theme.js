@@ -25,11 +25,12 @@ const theme = {
     champagne: '#ecf0f1',
     champagneDark: '#bdc3c7',
     metal: '#95a5a6',
-    metalDark: '#7f8c8d',
+    metalDark: '#5F4869',
     asphalt: '#34495e',
     asphaltDark: '#2c3e50',
     carbon: '#555459',
     carbonDark: '#3b3a3e',
+    backCard: '#231A26',
 
     // Default colors
     primary: '#2ecc71',
@@ -37,7 +38,8 @@ const theme = {
     danger: '#f37272',
     light: '#ecf0f1',
     dark: '#233240',
-    background: '#f37272',
+    background: '#170B1C',
+    container: '#312536',
     text: '#fff',
     link: '#3498db',
 
@@ -47,9 +49,18 @@ const theme = {
   fonts: ['Open Sans', 'Arial', 'Helvetica', 'sans-serif'].join(','),
   fontSizes: {
     small: '.8rem',
-    normal: '1.2rem',
-    large: '1.3rem',
-    title: '1.8rem',
+    normal: '1rem',
+    large: '1.2rem',
+    title: '1.3rem',
+    subtitle: '1.25rem',
+  },
+  breakpoints: {
+    xs: '0',
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px',
+    xxl: '1400px',
   },
 };
 
