@@ -39,7 +39,8 @@
   "devDependencies": {
     "json-server": "^0.16.3",
     "prettier": "^2.8.3"
-  }
+  },
 
+  "homepage": "https://paulabelmiro.github.io/api-github/"
 
 }
