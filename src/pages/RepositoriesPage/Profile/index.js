@@ -8,7 +8,7 @@ import { Container, Header, Login, Name, Avatar, Inner, Data, Back } from "./sty
 const Profile = ({user}) => (
   <Container>
     <Header>
-      <Back to={`/`} ><MdNavigateBefore size={20}/> Voltar</Back>
+      <Back to={`/api-github/`} ><MdNavigateBefore size={20}/> Voltar</Back>
       <Avatar src={user.avatar_url}/>
       <Login>{user.login}</Login>
       <Name> {user.name} </Name>
