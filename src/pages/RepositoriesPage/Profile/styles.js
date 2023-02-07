@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   padding: 1rem;
@@ -21,6 +21,11 @@ export const Avatar = styled.img`
   border-radius: 50%;
   width: 60%;
   margin-bottom: 1rem;
+
+  @media screen and (max-height: ${(props) => props.theme.breakpoints.md}){
+    width: 50%;
+    margin-bottom: 0;
+}
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     width: 70px;
@@ -50,8 +55,34 @@ export const Name = styled.h2`
 export const Inner = styled.div`
   padding: 1rem;
 
+  @media screen and (max-height: ${(props) => props.theme.breakpoints.md}){
+    padding: 0;
+  }
+
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     display: none;
+  }
+`;
+
+export const Back = styled(Link)`
+  background: transparent;
+  color: ${(props) => props.theme.colors.text};
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  svg {
+    margin-right: 5px;
+  }
+
+  &:hover{
+    color: rgba(255, 255, 255, 0.5)
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    padding: 0 1rem;
+    margin-right: 30px;
   }
 `;
 

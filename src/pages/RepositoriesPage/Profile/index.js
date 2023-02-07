@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from 'prop-types'
 
-import { MdGroup, MdLocationCity, MdWork, MdLink } from 'react-icons/md'
+import { MdGroup, MdLocationCity, MdWork, MdLink, MdNavigateBefore } from 'react-icons/md'
 
-import { Container, Header, Login, Name, Avatar, Inner, Data } from "./styles";
+import { Container, Header, Login, Name, Avatar, Inner, Data, Back } from "./styles";
 
 const Profile = ({user}) => (
   <Container>
     <Header>
+      <Back to={`/`} ><MdNavigateBefore size={20}/> Voltar</Back>
       <Avatar src={user.avatar_url}/>
       <Login>{user.login}</Login>
       <Name> {user.name} </Name>

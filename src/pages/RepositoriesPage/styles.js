@@ -28,7 +28,18 @@ export const Main = styled.section`
   width: 100%;
   height: 100vh;
   padding: 40px;
-  overflow-y: hidden;
+  overflow-y: auto;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme.colors.background};
+}
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     height: 100%
